@@ -1,0 +1,102 @@
+//Objetos
+
+
+//Exercicio 1
+
+/*
+
+let objetoFilme = {
+nome: "Nome do filme",
+anoLançamento: 1998,
+direcao: ["diretor1", "diretor2"],
+elenco: ["ator1", "ator2", "ator3", "ator4",],
+assistido: true
+};
+
+console.log(objetoFilme.nome);
+console.log(objetoFilme.anoLançamento);
+console.log(objetoFilme.direcao);
+console.log(objetoFilme["elenco"]);
+console.log(objetoFilme["assistido"]);
+console.log(objetoFilme.assistido);
+
+
+
+let Pessoa = {
+    nome: 'Gean',
+    idade: '16',
+    generoMusical:['Trap' , 'Gospel'],
+    }
+    
+    console.log("O nome da pessoa é " , Pessoa.nome + "ela tem" , Pessoa.idade);
+    
+    
+
+
+    //Exercicio 3
+
+    objetoFilme.personagens = ["Personagem1","Personagem2","Personagem3"];
+
+    console.log(objetoFilme.elenco[0] + "->" + objetoFilme.personagens[0]);
+    console.log(objetoFilme.elenco[1] + "->" + objetoFilme.personagens[1]);
+    console.log(objetoFilme.elenco[2] + "->" + objetoFilme.personagens[2]);    
+    
+        
+     objetoFilme.elenco[0] = "xuxa";
+     console.log(objetoFilme.elenco[0]);
+     
+     */
+
+/*
+const usuario = {
+    nome: 'Prof',
+    idade: 25,
+    email: 'prof@senacrs.com.br',
+    cidade: 'São Paulo'
+}
+const novoUsuario = {
+        ...usuario,
+        nome: 'João',
+    idade: 28
+    }
+
+console.log(usuario);
+console.log(novoUsuario);
+*/
+
+
+//espalhamento ou spread...
+/*
+const listaDeNomes = ["Mika", "Paula", "Victor"]
+const copiaListaDeNomes =[...listaDeNomes]
+
+
+console.log(copiaListaDeNomes)
+*/
+
+
+
+
+
+
+
+//EXERCICIO 4
+
+
+
+
+function lerObjetoPessoas(objeto){
+    let novoObjeto = {...objeto}
+
+    novoObjeto.comidasPreferidas = ["comida1", "comida2", "comida3"]
+    novoObjeto.melhorAmigo = {}
+
+
+
+
+
+
+
+
+console.log(`O nome da pessoa é ${novoObjeto.nome} e suas comidas preferidas são ${novoObjeto.comidasPreferidas[0]}, ${novoObjeto.comidasPreferidas
+    [1]} e ${novoObjeto.comidasPreferidas[2]}. Seu melhor amigo se chama ${novoObjeto.melhorAmigo.nome} e tem ${novoObjeto.melhorAmigo.idade}anos`);
